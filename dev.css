@@ -1,0 +1,424 @@
+
+   body{
+       width: 100%;
+   }
+    img{
+        width: 500px;
+        height: 350px;
+        margin-top: 80px;
+        
+    }
+    .all{
+        display: flex;
+        justify-content: space-between;
+        position: relative;
+        margin-top: 80px;
+    }
+    .ima{
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-start;
+        position: relative;
+    }
+    .p{
+        font-size: 50px;
+        color: rgb(0, 0, 0);
+        font-family: 'Ubuntu', sans-serif;
+        font-weight: bolder;
+        margin-top: 20px;
+    }
+    .h3{text-transform: capitalize;
+        font-family: 'Mochiy Pop One', sans-serif;
+        word-wrap: break-word;
+        width: 250px;
+        font-size: 25px;
+        color: rgb(77, 73, 73);
+        margin-top: 30px;
+    }
+    .bot{
+        margin-top: 40px;
+    }
+ 
+    .float{
+        height: 350px;
+        margin-top: 50px;
+        padding-left:30px ;
+        border-left: 2px solid ;
+        border-radius: 15px;
+        border-color: rgba(15, 15, 15, 0.363);
+
+    }
+    .reg{
+        width: 140px;
+        padding: 10px;
+        font-size: 15px;
+        border-radius: 5px;
+        border: rgba(75, 90, 223);
+        background-color: rgb(75, 90, 223) ;
+        color: white;
+    }
+    .reg:hover{
+        cursor:pointer;
+        width: 150px;
+        transition: 500ms ease-in;
+        background-color:rgb(96, 141, 245) ;
+    }
+    .log{
+        width: 120px;
+        padding:10px ;
+        font-size: 13px;
+        font-weight: bolder;
+        border-radius: 5px;
+        background-color: rgb(255, 255, 255);
+        color: rgb(75, 90, 223);
+        border-color:  rgb(75, 90, 223);
+        padding-left: 10px;
+        
+        
+    }
+    .log:hover{
+        cursor: pointer;
+        width: 130px;
+        transition: 500ms;
+        background-color: rgb(96, 141, 245);
+        color: white;
+        transition: 500ms ease-in;
+    }
+    h2{
+        font-size: 30px;
+        font-weight: bolder;
+        font-family: 'Ubuntu', sans-serif;
+        margin-top: 22px;
+    }
+   
+    @media (max-width:700px) {
+        img{width:100%;  height: 300px;}
+        .float{ width:70% ; margin-left: 5px;border: none;}
+        .all{  display: flex; flex-direction: column; }
+        .bot{display: flex }
+        .p{ font-size: 40px; font-weight: bolder; }
+        .h3{font-size: 25px}
+        .menu{margin-top: 20%;}
+         hr{width: 120px !important;}   
+         .welcome{font-size: 25px !important;}
+         .well{font-size: 15px !important;}
+         .text{width: 100% !important;}
+         .one{width: 120px !important; height: 200px !important;}
+         .midone{width: 150px !important; height: 240px !important;}
+         .imageone{width: 100px !important; height: 100px !important;}
+         h4{font-size: 15px !important ;}
+         h5{font-size: 10px !important ;}
+         .boxes{justify-content: space-around !important;}
+         .sponsors{display: grid !important; margin-top: 100px !important;}
+         .pho{font-size: 20px !important;}
+         .phon{font-size: 20px !important;margin-top:25px !important ;}
+         footer{height: 350px !important; justify-content: space-between !important;}
+         #menu{width: 25px !important; height: 25px !important;}
+         .building{margin-left: 35px !important;  }
+         .sponsors{margin-left: 15px !important; }
+         ul{margin-top: 50px !important;}
+         /* .headings{width: 100% !important;} */
+         #home{width: 70% !important;}
+         .faq{margin-top: 50px;}
+    }
+    @media (max-width:900px){
+        .all{display: grid !important;}
+        .float{margin-left: 5px !important;}
+        
+    }
+    @media (max-width:450px){
+        footer{height: 420px !important;}
+        /* .headings{width: 100vw !important;}  */
+    }
+    #menu{
+       width: 30px;
+       height: 30px;
+       margin-top: 20px;
+       margin-right:2px;
+       z-index: 3 ;
+       transform: translate(0px,0px);
+    
+    }
+    #menu:hover{
+        cursor: pointer;
+    }
+    .headings{
+      display: flex;
+      justify-content: space-between;
+      position: absolute;
+      top: 0px;
+      width: 100%;
+        }
+    
+    .imago{
+      width: 60px;
+      height: 50px;
+      margin-top: 15px;
+    
+}
+.headi{
+    display: flex;
+}
+ul{list-style: none; margin-top: 50px;}
+#home{
+    height: 100vh;
+    position: absolute;
+    z-index: 2;
+    display: flex;
+    background-color: rgb(251, 249, 249);
+    visibility: hidden; 
+    justify-content: flex-start;
+    border-top-left-radius: 5px;
+    width: 0%;
+    overflow-y: hidden;
+    opacity: 0;
+    transition:  opacity 0.7s,width 0.5s linear;
+    margin-top: 30px;
+}
+
+hr{
+    width: 250px;
+    color: rgba(29, 29, 29, 0.191);
+    opacity: 0.3;
+    font-weight: bolder;
+}
+.owner{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+
+}
+
+ul li{
+    text-transform: capitalize;
+    font-size: 20px;
+    font-weight: bolder;
+    line-height: 60px;
+    font-family: 'Ubuntu', sans-serif;;
+}
+.full{
+    display: flex;
+    flex-direction: column;
+}
+ .circle{
+    width: 100%;
+    height: 800px;
+    position: absolute;
+    margin-top: 80px;
+} 
+
+
+
+.text{
+    display: grid;
+    text-align: center;
+    margin-top: 100px;
+    word-wrap: break-word;
+    width: 70%;
+    
+}
+.oga{
+    display: flex;
+    justify-content:center ;
+}  
+.welcome{
+    font-size:  35px;
+    font-weight: bolder;
+    font-family: 'Mochiy Pop One', sans-serif;
+    margin-top: 50px;
+    text-transform: capitalize;
+
+}
+.well{
+    margin-top: 40px;
+    margin-bottom: 40px;
+    font-size: 17px;
+    font-weight: bolder;
+    word-spacing: 3px;
+    text-transform: capitalize;
+    font-family: 'Mochiy Pop One', sans-serif;
+
+}
+.one{
+    height: 270px;
+    width: 220px;
+    border-radius: 3px;
+    box-shadow: -3.5px 0px 6px 2.5px rgba(114, 109, 109, 0.486);
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+    z-index: 1;
+    background-color:white ;
+}
+.midone{
+    height: 350px;
+    width: 250px;
+    border-radius: 3px;
+    box-shadow: -3.5px 0px 6px 2.5px rgba(114, 109, 109, 0.486);
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+    z-index: 1;
+    background-color:white ;
+    transform: scale(1.1);
+}
+.boxes{
+    display: flex;
+    justify-content:space-evenly; 
+    margin-top: 70px;
+    align-items: center;
+}
+.imageone{
+    width: 200px;
+    height: 150px;
+    margin: 0%;
+    
+}
+h4{
+    font-size: 20px;
+    text-transform: capitalize;
+    margin-top: 10px;
+    font-family: 'Mochiy Pop One', sans-serif;
+    color: rgba(3, 3, 3, 0.904);
+}
+h5{
+    margin-top: 10px;
+    font-size: 12px;
+    font-family: 'Mochiy Pop One', sans-serif;
+    color: rgba(3, 3, 3, 0.753);
+}
+footer{
+    width: 100%;
+    height: 350px;
+    background-color: rgb(0, 0, 0);
+    margin-top: 100px;
+    position: relative;
+}
+.pho{
+    font-size: 27px;
+    font-weight: bolder;
+    font-family: 'Ubuntu', sans-serif;
+    color: rgb(109, 106, 106);
+    border: 3px solid rgb(109, 106, 106);
+    border-radius: 5px;
+    padding: 3px;
+}
+.phon{
+    font-size: 30px;
+    font-weight: bolder;
+    font-family: 'Ubuntu', sans-serif;
+    color: rgb(109, 106, 106);
+}
+.overall{
+    display: flex;
+    justify-content: space-between;
+}
+.phone{
+    display: flex;
+    margin-left: 10px;
+    margin-top: 30px;
+}
+.fea{
+    color: rgb(109, 106, 106);
+    margin-left: 20px;
+    margin-top: 30px;
+    text-transform: capitalize;
+    transition: 1s;
+}
+.fea:hover{
+    cursor: pointer;
+    color: rgba(117, 109, 233, 0.787);
+}
+.house{
+    color: rgb(109, 106, 106);
+    margin-top: 20px;
+}
+.building{
+    margin-top: 80px;
+}
+.buildimage{
+    color: rgb(109, 106, 106);
+}
+
+i{
+    color: rgb(109, 106, 106);
+
+}
+.sponsors{
+    margin-top:270px ;
+    margin-right: 50px;
+    word-spacing: 20px;
+}
+.fa-facebook:hover{
+    color: rgba(117, 109, 233, 0.787);
+    transform: translate(0px,-5px);
+    cursor: pointer;
+    transition: 1s;
+}
+.fa-twitter:hover{
+    color: rgba(117, 109, 233, 0.787);
+    transform: translate(0px,-5px);
+    cursor: pointer;
+    transition: 1s;
+}
+.fa-google-plus-g:hover{
+    color: rgba(117, 109, 233, 0.787);
+    transform: translate(0px,-5px);
+    cursor: pointer;
+    transition: 1s;
+}
+.fa-share-alt:hover{
+    color: rgba(117, 109, 233, 0.787);
+    transform: translate(0px,-5px);
+    cursor: pointer;
+    transition: 1s;
+}
+.prof:hover{
+    color: blue;
+    cursor: pointer;
+    transition: 1s;
+}
+.ho:hover{
+    color: blue;
+    cursor: pointer;
+    transition: 1s;
+}
+.bl:hover{
+    color: blue;
+    cursor: pointer;
+    transition: 1s;
+}
+.mes:hover{
+    color: blue;
+    cursor: pointer;
+    transition: 1s;
+}
+.si:hover{
+    color: blue;
+    cursor: pointer;
+    transition: 1s;
+}
+.overlay{
+    position: absolute;
+    width: 100%;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.37);
+    z-index: 2;
+    display: none;
+    opacity: 0;
+    transition: opacity 4.5s;
+}
+.copy{
+    color: rgb(109, 106, 106);
+    display: flex;
+    margin-left: 20px;
+    margin-top:30px;
+    font-size: 15px;
+}
+
+*{
+    margin: 0%;
+    box-sizing: content-box;
+}
